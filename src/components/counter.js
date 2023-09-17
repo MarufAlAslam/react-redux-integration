@@ -24,10 +24,13 @@ const Counter = () => {
   };
   const handleIncrement = () => {
     dispatch(increment());
+    if (countValue === 100) {
+        alert(message);
+      }
   };
   return (
     <div className="counter-wrapper">
-      <h2 className="text-center text-4xl text-white">REACT REDUX</h2>
+      <h2 className="text-center text-4xl text-white">REDUX-TOOLKIT</h2>
       <p className="text-2xl text-white font-[500] consolas">Counter App</p>
       <div className="line bg-white w-[70px] h-[3px] my-4"></div>
 
@@ -59,12 +62,12 @@ const Counter = () => {
           </button>
         </div>
 
-        <p className="text-white">
+        <p className="text-white text-center">
           Designed and Developed by{" "}
           <a
             href="https://fiverr.com/webdevmaruf"
             target="_blank"
-            className="text-[#764ABC] font-[500] bg-white px-2 py-1 rounded ml-2"
+            className="text-[#764ABC] font-[500] bg-white px-2 py-1 rounded ml-2 block my-1"
             rel="noreferrer"
           >
             WebDevMaruf
