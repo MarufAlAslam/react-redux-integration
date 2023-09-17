@@ -30,8 +30,8 @@ const Counter = () => {
   };
   return (
     <div className="counter-wrapper">
-      <h2 className="text-center text-4xl text-white">REDUX-TOOLKIT</h2>
-      <p className="text-2xl text-white font-[500] consolas">Counter App</p>
+      <h2 className="text-center md:text-4xl text-2xl text-white">REDUX-TOOLKIT</h2>
+      <p className="md:text-2xl text-xl text-white font-[500] consolas">Counter App</p>
       <div className="line bg-white w-[70px] h-[3px] my-4"></div>
 
       <div className="counts w-full flex flex-col justify-center items-center mt-10">
